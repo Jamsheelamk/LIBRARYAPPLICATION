@@ -22,10 +22,10 @@ function router(nav){
     adminRouter.post('/add',function(req,res){
 
 var item = {
-    title:require.body.title,
-    author:require.body.author,
-    genre:require.body.genre,
-    image:require.body.image
+    title:req.body.title,
+    author:req.body.author,
+    genre:req.body.genre,
+    image:req.body.image
 } 
           var book = Bookdata(item);
 
