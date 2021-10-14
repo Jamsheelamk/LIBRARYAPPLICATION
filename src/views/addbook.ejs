@@ -94,12 +94,12 @@
           <!--/stories-->
         
           <div class="row" style="border: 1px, solid,blue; ">    
-            <form  action="/admin/add" style="margin-left: 10cm;">
-                Title : <input type="text" name="title" style="border-color: blue; background-color: cadetblue;" required> <br><br>
-                Author: <input type="text" name="author" style="border-color: blue; background-color: cadetblue;" required><br> <br>
-                Genre : <input type="text" name="genre" style="border-color: blue; background-color: cadetblue;" required><br><br>
+            <form method="POST" action="/admin/add" style="margin-left: 10cm;">
+                title: <input type="text" name="title" style="border-color: blue; background-color: cadetblue;" required> <br><br>
+                author: <input type="text" name="author" style="border-color: blue; background-color: cadetblue;" required><br> <br>
+                genre: <input type="text" name="genre" style="border-color: blue; background-color: cadetblue;" required><br><br>
             
-               Image : <input type="file" name="image" style="border-color: blue;   " required> <br>
+               image: <input type="file" name="image" style="border-color: blue;   " required> <br>
               
                 <button type="submit" class="btn btn-danger">Add</button>         
   </form>
