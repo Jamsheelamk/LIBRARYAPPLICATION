@@ -5,6 +5,20 @@ const adminRouter =express.Router();
 
 const Bookdata=require('../model/Bookdata');
 
+// const multer = require('multer');
+// var storage= multer.diskStorage({
+//     destination: function(req,file,cb){
+//         cb(null,'./uploads')
+//     },
+//     filename: function(req,file,cb){
+//         cb(null, file.filename+"_"+Date.now()+"_"+file.originalname);
+//     }
+// })
+// var upload= multer({
+//     storage:  storage,
+
+// }).single("image");
+
 
 function router(nav){
 
@@ -13,7 +27,7 @@ function router(nav){
         res.render("addBook", {
             nav,
            
-            title:'Library',
+            title:'Library'
             
         });
     });

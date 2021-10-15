@@ -38,7 +38,7 @@ function router(nav){
                 title:'Library',
                 books
             });
-        })
+        });
 
         
     });
@@ -51,12 +51,12 @@ function router(nav){
         res.render("book", {
             
             nav,
-            title:'Library',
-           book
-        })
-       })
+            title:'Library'
+           
+        });
+       });
         
-    })
+    });
 
 return booksRouter;
 
